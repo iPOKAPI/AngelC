@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  animation: bg 15s linear infinite;
+  color: #333;
+  overflow-x: hidden;
+}
+
+header img {
+  height: 50px;
+  float: left;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  border-bottom: 1px solid rgb(235, 234, 234);
+  z-index: 1;
+}
+
+header nav {
+  margin-left: 20px;
+  padding: 30px 20px;
+}
+
+header ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header ul a{
+  color: black;
+  padding: 10px;
+}
+
+header nav ul li {
+  padding: 5px;
+  margin-left: 40px;
+}
+
+.page-link-site:not(.img){
+  position: sticky;
+  margin-top: 40px;
+}
+
+nav a:hover:not(.img) {
+  background: rgb(245, 245, 245);
+  border-radius: 50px;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .mobile-menu {
+  display: block;
+  align-items: left;
+  justify-content: flex-start;
+  background-color: white;
+  height: 160px;
+  padding: 10px;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.mobile-navbar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+      display: none;
+  }
+
+  .mobile-navbar {
+      display: flex;
+      align-items: center;
+      margin-right: 100px;
+      padding: 0 20px;
+      justify-content: space-between;
+  }
+
+  header ul li {
+      padding-top: 5px;
+  }
+
+  .mobile-navbar img {
+      display: block;
+      align-self: center;
+      padding: auto;
+      float: none;
+  }
+
+  #hamburger-icon {
+      display: block;
+      margin-left: -4px;
+      float: left;
+  }
+
+  header {
+      margin-top: 0px;
+  }
+}
+
+.header {
+  position: relative;
+  height: 100vh; 
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+.CoverPhoto {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: -2; 
+}
+.logo {
+    position: absolute;
+    left: 44%;
+    transform: translateX(-50%); 
+    display: flex; 
+    background: none; 
+    margin: 0; 
+    mix-blend-mode:multiply;
+    width: 10%;
+    top: 10%;
+}
+.circle{
+    position: absolute;
+    left: 44%;
+    transform: translateX(-50%); 
+    display: flex; 
+    background: none; 
+    margin: 0; 
+    top: 10%;
+    width: 10%;
+    border-radius: 50%;
+}
+.logo1 {
+    position: absolute;
+    right: 33.9%;
+    transform: translateX(-50%); 
+    display: flex; 
+    background: none; 
+    margin: 0; 
+    top: 10%;
+    mix-blend-mode:multiply;
+    width: 10%;
+}
+.circle1{
+    position: absolute;
+    right: 33.9%;
+    transform: translateX(-50%); 
+    display: flex; 
+    background: none; 
+    margin: 0; 
+    top: 10%;
+    width: 10%;
+    border-radius: 50%;
+}
+.cnu-text {
+    position: absolute;
+    left: 50%; /* Centers horizontally */
+    top: 32.5%; /* Position 10% up from the bottom */
+    transform: translateX(-50%); /* Perfect horizontal centering */
+    display: block; /* Enables flexbox properties */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically (if needed) */
+    margin: 0;
+    color: #1e1e1e; /* Optional: Set text color */
+    font-size: 1.2rem; /* Adjust font size */
+    text-align: center; /* Center-align text */
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 150%;
+    text-shadow: #fff9be 2px 2px 5px;
+    }
+.corner{
+    position: absolute;
+    bottom: 0;
+    background: none; 
+    margin: 0; 
+    width: 100vw;
+    height: 18%;
+    mix-blend-mode:multiply;
+}
+.header::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f7de32;
+  opacity: 10%; 
+}
+
+.header h1 {
+    position: absolute;
+    top: 50%; /* Position the title a bit down from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Ensure the title is perfectly centered */
+    text-align: center;
+    color: #0a0a0a;
+    font-family:'CustomCalligraphy',cursive;
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 5px rgba(215, 213, 213, 0.671);
+    z-index: 0; /* Ensure the text is above other content */
+    margin-top: 0;
+    white-space: nowrap; /* Prevents line break if not needed */
+    max-width: 90vw; /* Prevents overflow, limits the width */
+    overflow: hidden; /* Prevents any text overflow */
+}
+.name{
+  position: absolute;
+  bottom: 3%; /* Position the title a bit down from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Ensure the title is perfectly centered */
+  text-align: center;
+  color: #0a0a0a;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-shadow: 2px 2px 5px rgba(215, 213, 213, 0.671);
+  z-index: 0; /* Ensure the text is above other content */
+  margin-top: 0;
+  white-space: nowrap; /* Prevents line break if not needed */
+  max-width: 90vw; /* Prevents overflow, limits the width */
+  overflow: hidden; /* Prevents any text overflow */
+}
+@font-face {
+  font-family: 'CustomCalligraphy';
+  src: url('Dancing\ Script.ttf') format('truetype');
+}
+.section-title {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 3.5rem;
+    color: #2c2b2b;
+    font-family: 'CustomCalligraphy',cursive;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ /* About Section */
+ .about {
+    padding: 50px 0;
+    background-color: #fff9be;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about img {
+    float: left;
+    width: 30%;
+    margin-right: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    float: left;
+    width: 65%;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.about p{
+    font-size: 1.5rem;
+}
+  /* Journey Path Styling */
+  .journey-path {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20px auto;
+  }
+
+  .journey-path::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #6d3300; /* Path color */
+    transform: translateX(-50%);
+  }
+
+  /* Journey Step Styling */
+  .journey-step {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 0; /* Increased margin for better spacing */
+    width: 100%;
+  }
+
+  .journey-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #f0993b;
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%; /* Center circle on the vertical path */
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
+  /* Journey Circle as Hyperlink */
+  .journey-circle a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .journey-circle a:hover {
+    color: white;
+    cursor: pointer;
+  }
+
+  .journey-step p {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 10px 20px;
+    color: #333;
+    width: 40%;
+    font-weight: bold;
+  }
+
+  /* Odd Step - Left Alignment */
+  .journey-step:nth-child(odd) p {
+    text-align: right;
+    position: absolute;
+    left: 5%; /* Adjusted to create more space from the center */
+    margin-right: 0;
+    padding-right: 20px; /* Reduced padding for balance */
+  }
+
+  /* Even Step - Right Alignment */
+  .journey-step:nth-child(even) p {
+    text-align: left;
+    position: absolute;
+    right: 5%; /* Adjusted to create more space from the center */
+    margin-left: 0;
+    padding-left: 20px; /* Reduced padding for balance */
+  }
+
+  /* Hover Effect */
+  .journey-step:hover .journey-circle {
+    background-color: #fcff36;
+  }
+  .lesson-content {
+    position: relative;
+    justify-content: center;
+    width: 100%; 
+    margin: 0 auto; 
+    text-align: justify;  
+  }
+
+.lesson-content p{
+    font-size: 1rem;
+}
+
+.inline-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; /* Ensures images stay inline without wrapping */
+  gap: 10px; /* Spacing between images */
+  padding: 20px;
+  overflow-x: auto; /* Adds horizontal scroll if needed */
+}
+
+.inline-item img {
+  scroll-snap-align: start;
+  width: 220px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.inline-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; /* Ensures images stay inline without wrapping */
+  gap: 10px; /* Spacing between images */
+  padding: 20px;
+  overflow-x: hidden; /* Adds horizontal scroll if needed */
+}
+@media (max-width: 768px) {
+  .gallery-item {
+      flex: 1 1 calc(50% - 30px); /* 2 items per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+      flex: 1 1 100%; /* 1 item per row on mobile */
+  }
+}
