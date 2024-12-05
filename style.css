@@ -97,6 +97,10 @@ nav a:hover:not(.img) {
   width: 100%;
 }
 
+.mobile-menu.show {
+  display: block;
+}
+
 .mobile-menu li {
   margin-bottom: 10px;
 }
@@ -108,7 +112,7 @@ nav a:hover:not(.img) {
   width: 600px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
   header nav {
       display: none;
   }
@@ -126,9 +130,11 @@ nav a:hover:not(.img) {
   }
 
   .mobile-navbar img {
-      display: block;
-      align-self: center;
-      padding: auto;
+    position: absolute;
+    top: 0;
+    margin: 3px;
+    left: 45%;
+      padding: 2px;
       float: none;
   }
 
@@ -140,6 +146,12 @@ nav a:hover:not(.img) {
 
   header {
       margin-top: 0px;
+  }
+    /* Responsive styling for header h1 */
+    header h1 {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+      text-align: center; /* Center the heading */
+      margin: 10px 0; /* Add margin for spacing */
   }
 }
 
@@ -273,6 +285,51 @@ nav a:hover:not(.img) {
   margin-top: 0;
   white-space: nowrap; /* Prevents line break if not needed */
 }
+
+/* Mobile View Adjustments */
+@media only screen and (max-width: 768px) {
+  .logo, .logo1 {
+    width: 15%; /* Increase logo size on mobile */
+    top: 15%;
+  }
+  .logo{
+    left: 42%;
+  }
+  .logo1{
+    right: 26%;
+  }
+
+  .circle, .circle1 {
+    width: 15%;
+    top: 15%;
+  }
+
+  .circle{
+    left: 42%;
+  }
+  .circle1{
+    right: 26%;
+  }
+  .cnu-text {
+    font-size: 0.6rem; /* Smaller font size for mobile */
+    top: 26%;
+    left: 50%;
+  }
+
+  .name {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    bottom: 5%;
+  }
+
+  .corner {
+    height: 25%; /* Adjust corner height for mobile */
+  }
+
+  .header h1 {
+    font-size: 2.1rem; /* Adjust header font size for mobile */
+    top: 40%;
+  }
+}
 @font-face {
   font-family: 'CustomCalligraphy';
   src: url('Dancing\ Script.ttf') format('truetype');
@@ -309,8 +366,6 @@ nav a:hover:not(.img) {
 }
 
 .about-content {
-    float: left;
-    width: 65%;
     margin-left: 20px;
     text-align: justify;
 }
@@ -410,6 +465,64 @@ nav a:hover:not(.img) {
   .journey-step:hover .journey-circle {
     background-color: #fcff36;
   }
+  /* General Styles for Mobile */
+@media only screen and (max-width: 760px) {
+  /* Journey Path Container */
+  .journey-path {
+    margin: 10px auto;
+    width: 90%; /* Reduced width for better fitting on mobile screens */
+  }
+
+  .journey-path::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px; /* Thinner path line */
+  }
+
+  /* Journey Step */
+  .journey-step {
+    margin: 15px 0; /* Reduced margin for mobile spacing */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .journey-circle {
+    width: 20px; /* Smaller circle */
+    height: 20px; /* Smaller circle */
+    font-size: 0.8rem; /* Reduced font size */
+  }
+
+  .journey-circle a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Text inside each journey step */
+  .journey-step p {
+    font-size: 0.5rem; /* Adjust text size for mobile */
+    padding: 8px 16px;
+    width: 90%; /* Reduced width */
+    text-align: center; /* Center-align text for better visibility */
+    margin: 10px 0;
+  }
+  .journey-path .journey-step:nth-child(odd) p {
+    text-align: right;
+  }
+  
+  .journey-path .journey-step:nth-child(even) p {
+    text-align: left;
+  }
+  /* Hover Effect */
+  .journey-step:hover .journey-circle {
+    background-color: #fcff36;
+  }
+}
+
   .lesson-content {
     position: relative;
     justify-content: center;
