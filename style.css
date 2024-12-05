@@ -425,10 +425,10 @@ nav a:hover:not(.img) {
 
 .inline-gallery {
   display: flex;
-  justify-content: center;
   flex-wrap: nowrap; /* Ensures images stay inline without wrapping */
   gap: 10px; /* Spacing between images */
   padding: 20px;
+  justify-content: space-evenly;
   overflow-x: auto; /* Adds horizontal scroll if needed */
 }
 
