@@ -230,6 +230,7 @@ nav a:hover:not(.img) {
     width: 100vw;
     height: 18%;
     mix-blend-mode:multiply;
+    z-index: 0;
 }
 .header::before {
   content: ''; 
@@ -248,10 +249,10 @@ nav a:hover:not(.img) {
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Ensure the title is perfectly centered */
     text-align: center;
-    color: #0a0a0a;
+    color: #f7f8eb;
     font-family:'CustomCalligraphy',cursive;
     font-size: 4.5rem;
-    text-shadow: 2px 2px 5px rgba(215, 213, 213, 0.671);
+    text-shadow: 2px 2px 5px rgba(87, 78, 2, 0.892);
     z-index: 0; /* Ensure the text is above other content */
     margin-top: 0;
     white-space: nowrap; /* Prevents line break if not needed */
@@ -259,20 +260,18 @@ nav a:hover:not(.img) {
     overflow: hidden; /* Prevents any text overflow */
 }
 .name{
-  position: absolute;
+  position:absolute;
   bottom: 3%; /* Position the title a bit down from the top */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Ensure the title is perfectly centered */
   text-align: center;
-  color: #0a0a0a;
+  color: #030303;
   font-family:Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  text-shadow: 2px 2px 5px rgba(215, 213, 213, 0.671);
+  text-shadow: 1px 1px 5px rgb(255, 255, 255);
   z-index: 0; /* Ensure the text is above other content */
   margin-top: 0;
   white-space: nowrap; /* Prevents line break if not needed */
-  max-width: 90vw; /* Prevents overflow, limits the width */
-  overflow: hidden; /* Prevents any text overflow */
 }
 @font-face {
   font-family: 'CustomCalligraphy';
@@ -317,7 +316,7 @@ nav a:hover:not(.img) {
 }
 
 .about p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
   /* Journey Path Styling */
   .journey-path {
@@ -425,7 +424,7 @@ nav a:hover:not(.img) {
 
 .inline-gallery {
   display: flex;
-  flex-wrap: nowrap; /* Ensures images stay inline without wrapping */
+  flex-wrap: nowrap; /* Ensures images stay in  line without wrapping */
   gap: 10px; /* Spacing between images */
   padding: 20px;
   justify-content: space-evenly;
