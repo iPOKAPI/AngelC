@@ -50,7 +50,7 @@
         <div class="name">
           <h3>Angel M. Cabataña</h3>
           <hr style="border-color: black; border-width: 2px;">
-          <h3>Student Teacher Intern</h3>
+          <h3>Student Teaching Intern</h3>
         </div>
         <img src="Image/bot.png" class="corner"> 
         <img src="Image/bot.png" class="corner"> 
@@ -174,10 +174,34 @@
         <p>
             This experience in a multigrade classroom has taught me that no challenge is impossible with determination, creativity, and a willingness to learn. It reaffirmed my passion for teaching and strengthened my resolve to make a difference in the lives of my students, no matter the obstacles. Through this journey, I learned that lesson planning is not just about meeting deadlines or ticking boxes. It’s about being thoughtful, innovative, and adaptable.
         </p><br>
-      </div>
-    <Center><hr style="width: 100vw; padding: 2px; background-color: orange;"></Center>
-</div>
-</section>
+        <button class="accordion">Download Lesson Plan</button>
+        <div class="panel"><br>
+          <p>
+            <a href="pdf1.pdf" download>APPROVED CABATANA- LP 2- VALUES</a><br>
+            <a href="pdf2.pdf" download>APPROVED CABATANA- MATH LP- MULTIGRADE</a><br>
+            <a href="pdf3.pdf" download>APPROVED CABATANA- LP 2- VALUES</a><br>
+            <a href="pdf4.pdf" download>APPROVED CBLA LESSON PLAN- CHRISTMAS </a><br>
+          </p>
+        </div>
+      </div><br>
+      <Center><hr style="width: 100vw; padding: 2px; background-color: orange;"></Center>
+    </section>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
 <!--IMS Section-->
 <section id="IMS" class="about clearfix" style="background-color: transparent;">
     <div class="container">

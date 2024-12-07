@@ -556,6 +556,33 @@ nav a:hover:not(.img) {
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+.accordion {
+  background-color: #fdfef0;
+  color: black;
+  cursor: pointer;
+  border: solid 1px;
+  padding: 3px;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.active, .accordion:hover {
+  background-color: #f6cf0e;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
 
 .video{
   display: block;
