@@ -89,14 +89,104 @@
                     Your browser does not support the video tag.
                     </video></center></div>
         </div>
-  
+     </section>
+
+        <section id="school" class="about clearfix">
+          <div class="container">
+              <h2 class="section-title">Through their eyes: </h2>
+              <center><h2><strong> A student teacher journey</strong></h2><br></center>
+                  <hr style="width: 100vw; padding: 2px; background-color: orange;">
+                  <div class="images">
+                    <div class="image-item">
+                        <img src="Image/i1.jpg" alt="Front Image" class="front">
+                        <img src="Image/i21.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                        <img src="Image/i2.jpg" alt="Front Image" class="front">
+                        <img src="Image/i22.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                        <img src="Image/i3.jpg" alt="Front Image" class="front">
+                        <img src="Image/i23.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i4.jpg" alt="Front Image" class="front">
+                      <img src="Image/i24.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i5.jpg" alt="Front Image" class="front">
+                      <img src="Image/i25.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i6.jpg" alt="Front Image" class="front">
+                      <img src="Image/i26.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i7.jpg" alt="Front Image" class="front">
+                      <img src="Image/i27.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i8.jpg" alt="Front Image" class="front">
+                      <img src="Image/i28.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i9.jpg" alt="Front Image" class="front">
+                      <img src="Image/i29.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i10.jpg" alt="Front Image" class="front">
+                      <img src="Image/i30.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i11.jpg" alt="Front Image" class="front">
+                      <img src="Image/i31.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i12.jpg" alt="Front Image" class="front">
+                      <img src="Image/i32.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i13.jpg" alt="Front Image" class="front">
+                      <img src="Image/i33.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i14.JPG" alt="Front Image" class="front">
+                      <img src="Image/i34.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i15.JPG" alt="Front Image" class="front">
+                      <img src="Image/i35.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i16.JPG" alt="Front Image" class="front">
+                      <img src="Image/i36.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i17.JPG" alt="Front Image" class="front">
+                      <img src="Image/i37.JPG" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i18.JPG" alt="Front Image" class="front">
+                      <img src="Image/i3.jpg" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i19.JPG" alt="Front Image" class="front">
+                      <img src="Image/i2.jpg" alt="Back Image" class="back">
+                    </div>
+                    <div class="image-item">
+                      <img src="Image/i20.JPG" alt="Front Image" class="front">
+                      <img src="Image/i1.jpg" alt="Back Image" class="back">
+                    </div>
+                </div>
+                <hr style="width: 100vw; padding: 2px; background-color: orange;"><br>
+          </div>
   </section>
-  <section id="school" class="about clearfix">
+  <section id="school" class="about clearfix" style="background-color: transparent;">
     <div class="container">
         <h2 class="section-title">Off-Campus Teaching Internship Chronicles</h2>
         <h2><strong>Pictures</strong></h2><br>
             <hr style="width: 100vw; padding: 2px; background-color: orange;">
-           <div class="images">
+            <div class="images">
               <div class="image-item">
                   <img src="Image/off1.jpg" alt="Front Image" class="front">
                   <img src="Image/off21.jpg" alt="Back Image" class="back">
@@ -251,7 +341,7 @@
 .images {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 53px;
         }
         .image-item {
             position: relative;
@@ -279,6 +369,28 @@
         .image-item:hover img.back {
             opacity: 1;
         }
+         /* Media Query for Mobile Devices */
+    @media (max-width: 768px) {
+        .image-item {
+            width: 120px; /* Reduce size for mobile */
+            height: 120px;
+        }
+
+        .images {
+            gap: 15px; /* Reduce gap for smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .image-item {
+            width: 100px; /* Further reduce size for very small screens */
+            height: 100px;
+        }
+
+        .images {
+            gap: 10px; /* Minimal gap for compact screens */
+        }
+    }
 </style>
 <script>
     // When the user scrolls down 20px from the top, show the button
